@@ -1,0 +1,35 @@
+"use client"
+import { usePathname } from "next/navigation"
+import { Github } from "react-bootstrap-icons"
+
+
+export default function Footer() {
+    const path = usePathname()
+    const isProjectPage = path.startsWith("/projects")
+    const headline = isProjectPage && <h3>One More Thing</h3>
+    const description = isProjectPage && (
+        <p>
+            This webside does not have the need for Next.js and React because there is not much interaction with its content and no server functionality is needed.<br/>
+            But to show, that I'm good at developing I have made the entire website with Next.js.<br/>
+            You can find the code of it here: <a className="text-orange" href="#" >Website source code <Github/></a>
+        </p>
+    )
+
+    const classNameCenter = isProjectPage ? "mt-3" : "d-flex justify-content-center mt-3"
+
+    return (
+        <footer id="footer">
+            <div className="container px-5 py-3">
+
+                <div className={classNameCenter}>
+                    <span className="text-start">
+                        {headline}
+                        <p>Designed by <span className="text-orange">Philip Hannemann</span> and made with <span className="text-orange">Next.js</span></p>
+                        {description}
+                    </span>
+
+                </div>
+            </div>
+        </footer>
+    )
+}
