@@ -45,7 +45,7 @@ export default function About() {
                   <th><ChevronRight className="text-orange" /> <strong>Birthday:</strong></th>
                   <td>16 October 1994</td>
                   <th><ChevronRight className="text-orange" /> <strong>Website:</strong></th>
-                  <td><a href="/https://philiphannemann.github.io">philiphannemann.github.io</a></td>
+                  <td><a href="https://philiphannemann.github.io">philiphannemann.github.io</a></td>
                 </tr>
                 <tr>
                   <th><ChevronRight className="text-orange" /> <strong>City:</strong></th>
@@ -102,7 +102,7 @@ export default function About() {
 
                 <ProgressBar title="Spring Boot" percentage={95} />
                 <ProgressBar title="Boost" percentage={90} />
-                <ProgressBar title="ROS" percentage={90} />
+                <ProgressBar title="ROS" percentage={80} />
                 <ProgressBar title="SwiftUI" percentage={99} />
 
               </div>

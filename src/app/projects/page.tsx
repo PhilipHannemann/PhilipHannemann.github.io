@@ -84,7 +84,7 @@ export default function Home() {
               It has a plant search, a calendar and an overview page. 
             </p>
           </ContentSection>
-          <ContentSection title="LinkedIn Assessment" icon={Linkedin} mediaLarge variant={2} mediaSrc="/projects/IBeeAlive.mp4">
+          <ContentSection title="LinkedIn Assessment" icon={Linkedin} mediaLarge variant={2} mediaSrc="/projects/demoThrowOptimization.gif">
             <h3>Webapp for training your skills</h3>
             <p>
               LinkedIn used to have skill assessments what a GitHub user crawled into markdown files.
@@ -98,7 +98,7 @@ export default function Home() {
           </ContentSection>
         </main>
 
-        <Footer />
+        <Footer extented />
       </div>
     </>
   )

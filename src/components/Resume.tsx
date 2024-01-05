@@ -1,7 +1,10 @@
 
-interface ResumeEntry {
+export interface ResumeEntry {
     headline: string,
+    subheadline?: string,
     time: string,
+    at: string,
+    description?: string,
     workingOn: string[]
 }
 
@@ -12,20 +15,21 @@ interface ResumeProps {
 
 export default function Resume({ education, carrier }: ResumeProps) {
 
-    function resumeItemView({ headline, time, workingOn }: ResumeEntry, index: number) {
-
-        let description = <p>{workingOn[0]}</p>
-
-        if (workingOn.length > 1) {
-            const listItems = workingOn.map((text, i) => <li key={i}>{text}</li>)
-            description = <ul>{listItems}</ul>
-        }
+    function resumeItemView({ headline, time, workingOn, subheadline, at, description }: ResumeEntry, index: number) {
+        const workingOnList = (
+            <ul className="m-0">
+                {workingOn.map((text, i) => <li className="pb-1" key={i}>{text}</li>)}
+            </ul>
+        )
 
         return (
             <div className="resume-item" key={index}>
-                <h4>{headline}</h4>
-                <h5 className="rounded bg-secondary opacity-50 text-black">{time}</h5>
-                {description}
+                <h4 className="fw-bolder text-dark text-uppercase h5">{headline}</h4>
+                <div className="pb-2"><i>{subheadline}</i></div>
+                <h5 className="rounded bg-secondary bg-opacity-25 text-dark">{time}</h5>
+                <h5 className="mx-2 rounded bg-secondary bg-opacity-25 text-dark">@{at}</h5>
+                <p>{description}</p>
+                {workingOnList}
             </div>
         )
     }
@@ -35,12 +39,12 @@ export default function Resume({ education, carrier }: ResumeProps) {
 
     return (
         <div className="row">
-            <div className="col-lg-6" data-aos="fade-up">
-                <h3 className="resume-title">Education</h3>
+            <div className="col-lg-6">
+                <h3 className="text-dark py-4">Education</h3>
                 {educationView}
             </div>
-            <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <h3 className="resume-title">Professional Experience</h3>
+            <div className="col-lg-6">
+                <h3 className="text-dark py-4">Professional Experience</h3>
                 {carrierView}
             </div>
         </div>
