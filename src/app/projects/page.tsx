@@ -39,9 +39,9 @@ export default function Home() {
             <h3>Leading the Process Automation Team</h3>
             <p>Experience streamlined insurance claim handling. Our innovative application showcases a split-screen demo. On one side, clients effortlessly scan and submit documents via a native iOS app. On the other, insurance employees access a tool for manual processing, swiftly addressing OCR errors or client queries.</p>
             <p>
-              Watch as automated processing seamlessly transforms submissions into completed tasks within the insurance system. Witness the application's adaptability as intentional modifications trigger a smooth transition to manual intervention, ensuring accurate assessments.
+              Watch as automated processing seamlessly transforms submissions into completed tasks within the insurance system. Witness the application&apos;s adaptability as intentional modifications trigger a smooth transition to manual intervention, ensuring accurate assessments.
             </p>
-            <p>This demo highlights our application's powers with routine tasks while seamlessly accommodating manual intervention when needed.</p>
+            <p>This demo highlights our application&apos;s powers with routine tasks while seamlessly accommodating manual intervention when needed.</p>
 
           </ContentSection>
           <ContentSection title="Set" flip mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1701981634/projects/bglpswalqwhbnekekf1f.mp4" mediaSubtitle="Set executed in a Swift-Playground">
@@ -56,7 +56,7 @@ export default function Home() {
             </p>
             <p>
              It has three different play modes: singleplayer, multiplayer and playing against the AI. <br />
-             It also knows if the selected cards are equivilant to a Set or not and it also shows with a green background color on the "3 More Cards"-button, if there are no Sets on the table and it is safe to press this button.
+             It also knows if the selected cards are equivilant to a Set or not and it also shows with a green background color on the &quot;3 More Cards&quot;-button, if there are no Sets on the table and it is safe to press this button.
             </p>
 
           </ContentSection>

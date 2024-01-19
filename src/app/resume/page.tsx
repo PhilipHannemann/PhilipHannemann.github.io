@@ -17,7 +17,7 @@ export default function Home() {
           <div className="blend-container blend-in" />
           <div className="text-container">
             <h1 className="display-3">Resume</h1>
-            <h4>I'm <Type text={["a Senior Developer", "a Data Scientist", "a Full-Stack Developer", "Head of Process Automation"]} /></h4>
+            <h4>I&apos;m <Type text={["a Senior Developer", "a Data Scientist", "a Full-Stack Developer", "Head of Process Automation"]} /></h4>
           </div>
         </header>
 

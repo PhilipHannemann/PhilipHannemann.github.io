@@ -24,7 +24,7 @@ export default function Type({ text, typeSpeed = 100, prefix = "" }: TypeProps) 
         });
 
         return () => typed.destroy();
-    }, []);
+    }, [prefix, text, typeSpeed]);
 
     
     return <span className='type-container' ref={ref} />

@@ -27,7 +27,7 @@ export default function About() {
             <p>As an applied computer science graduate from TU Chemnitz, I am pushing the boundaries of technology and innovation. My journey has taken me from cutting-edge research to leading the process automation team at STTech.</p>
             <p>
               I expanded my horizons with a transformative semester at San José State University, USA, and a course at Stanford University, absorbing diverse perspectives in tech. <br />
-              During my master thesis, I architected real-time optimization algorithms in C++ to make trains more energy-efficient. This sparked the interest of a professor from TU Munich, who recruited me to STTech. Over three years as a developer and 1.5 years as the head of the Process Automation department, I've improved my skills and lead teams towards impressiv products.
+              During my master thesis, I architected real-time optimization algorithms in C++ to make trains more energy-efficient. This sparked the interest of a professor from TU Munich, who recruited me to STTech. Over three years as a developer and 1.5 years as the head of the Process Automation department, I&apos;ve improved my skills and lead teams towards impressiv products.
             </p>
 
             <div className="row">

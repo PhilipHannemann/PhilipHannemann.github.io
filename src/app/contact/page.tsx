@@ -20,10 +20,10 @@ export default function Home() {
         <main>
         <NavBarV2 />
         <ContentSection icon={Envelope} title="Contact" mediaSrc="/PhilipHannemann.JPG">
-            <h3>Let's Connect</h3>
+            <h3>Let&apos;s Connect</h3>
             <p>As an applied computer science graduate from TU Chemnitz / San José State / Stanford University and my long professional time as a software engineer at various different companies, I am the perfect fit for developing your groundbraking solutions.</p>
             <p>
-              If I made you curious, let's connect: 
+              If I made you curious, let&apos;s connect: 
             </p>
 
             <div className="grid-container-2">

@@ -11,7 +11,7 @@ export default function Footer({ extented }: FooterProps) {
     const description = extented && (
         <p>
             This webside does not have the need for Next.js and React because there is not much interaction with its content and no server functionality is needed.<br />
-            But to show, that I'm good at developing I have made the entire website with Next.js.<br />
+            But to show, that I&apos;m good at developing I have made the entire website with Next.js.<br />
             You can find the code of it here: <a className="text-orange" href="#" >Website source code <Github /></a>
         </p>
     )
