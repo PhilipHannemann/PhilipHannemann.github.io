@@ -1,7 +1,7 @@
 import { type ResumeEntry } from "@/components/Resume"
 
 
-export const EDUCATION: ResumeEntry[] = [
+export const EDUCATION: ReadonlyArray<ResumeEntry> = [
     {
         headline: "Master of Applied Computer Science",
         subheadline: "Thesis: Streckendaten-basierte Optimal-Steuerung von Hybridzügen in Echtzeitumgebungen",
@@ -27,11 +27,12 @@ export const EDUCATION: ResumeEntry[] = [
             "Computer Graphics",
             "Artificial Intelligence",
             "Datastructures",
+            "Theoretical Computer Science",
         ]
     },
 ]
 
-export const CARRIER: ResumeEntry[] = [
+export const CARRIER: ReadonlyArray<ResumeEntry> = [
     {
         headline: "Head of Process automation",
         time: "since 2022",
@@ -70,4 +71,4 @@ export const CARRIER: ResumeEntry[] = [
         description: "During my studies at the TU Chemnitz I was working as a working student to help optimize the website. I build a new more organized website structue and added search and filter functionalities. All was build with php on the backend side and JavaScript, HTML and CSS on the client side.",
         workingOn: []
     }
-]
+] as const

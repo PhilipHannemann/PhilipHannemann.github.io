@@ -9,8 +9,8 @@ export interface ResumeEntry {
 }
 
 interface ResumeProps {
-    education: ResumeEntry[],
-    carrier: ResumeEntry[]
+    education: readonly ResumeEntry[],
+    carrier: readonly ResumeEntry[]
 }
 
 export default function Resume({ education, carrier }: ResumeProps) {
