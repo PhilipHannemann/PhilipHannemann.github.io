@@ -84,7 +84,7 @@ export default function Home() {
               It has a plant search, a calendar and an overview page. 
             </p>
           </ContentSection>
-          <ContentSection title="LinkedIn Assessment" icon={Linkedin} mediaLarge variant={2} mediaSrc="/projects/demoThrowOptimization.gif">
+          <ContentSection title="LinkedIn Assessment" icon={Linkedin} mediaLarge variant={2} mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1705705811/projects/trjkmhb9orwfppierm6g.mp4">
             <h3>Webapp for training your skills</h3>
             <p>
               LinkedIn used to have skill assessments what a GitHub user crawled into markdown files.
