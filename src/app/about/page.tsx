@@ -23,46 +23,30 @@ export default function About() {
         <main>
           <NavBarV2 />
           <ContentSection icon={Person} title="About Me" mediaSrc="/PhilipHannemann.JPG">
-            <h3>Head of Process Automation &amp; Developer.</h3>
-            <p>As an Applied Computer Science graduate from TU Chemnitz, I'm pushing the boundaries of technology and innovation. My journey has taken me from cutting-edge research to leading the process automation team at STTech.</p>
+            <h3>Head of Process Automation &amp; Developer</h3>
+            <p>As an applied computer science graduate from TU Chemnitz, I am pushing the boundaries of technology and innovation. My journey has taken me from cutting-edge research to leading the process automation team at STTech.</p>
             <p>
-              I expanded my horizons with a transformative semester at San José State University, USA, and a course at Stanford University, absorbing diverse perspectives in tech.
+              I expanded my horizons with a transformative semester at San José State University, USA, and a course at Stanford University, absorbing diverse perspectives in tech. <br />
+              During my master thesis, I architected real-time optimization algorithms in C++ to make trains more energy-efficient. This sparked the interest of a professor from TU Munich, who recruited me to STTech. Over three years as a developer and 1.5 years as the head of the Process Automation department, I've improved my skills and lead teams towards impressiv products.
             </p>
-            <p>
-              During my master thesis, I architected real-time optimization algorithms in C++ to make trains more energy-efficient. This sparked the interest of a professor from TU Munich, who recruited me to STTech. Over three years as a developer and 1.5 years as the head of the Process Automation department, I've improved my skills and led teams towards impressiv products.
-            </p>
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col" className="col-1"></th>
-                  <th scope="col" className="col-3"></th>
-                  <th scope="col" className="col-1"></th>
-                  <th scope="col" className="col-3"></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th><ChevronRight className="text-orange" /> <strong>Birthday:</strong></th>
-                  <td>16 October 1994</td>
-                  <th><ChevronRight className="text-orange" /> <strong>Website:</strong></th>
-                  <td><a href="https://philiphannemann.github.io">philiphannemann.github.io</a></td>
-                </tr>
-                <tr>
-                  <th><ChevronRight className="text-orange" /> <strong>City:</strong></th>
-                  <td>Würzburg, Germany</td>
-                  <th><ChevronRight className="text-orange" /> <strong>Age:</strong></th>
-                  <td>29</td>
-                </tr>
-                <tr>
-                  <th><ChevronRight className="text-orange" /> <strong>Email:</strong></th>
-                  <td>philip.hannemann@t-online.de</td>
-                  <th><ChevronRight className="text-orange" /> <strong>Degree:</strong></th>
-                  <td>Master</td>
-                </tr>
-              </tbody>
-            </table>
-          </ContentSection>
 
+            <div className="row">
+              <div className="col-5 col-md-2"><ChevronRight className="text-action" /> <strong>Birthday:</strong></div>
+              <div className="col-7 col-md-4">16 October 1994</div>
+              <div className="col-5 col-md-2"><ChevronRight className="text-action" /> <strong>Website:</strong></div>
+              <div className="col-7 col-md-4"><a className="link text-break" href="https://philiphannemann.github.io">philiphannemann.github.io</a></div>
+
+              <div className="col-5 col-md-2"><ChevronRight className="text-action" /> <strong>City:</strong></div>
+              <div className="col-7 col-md-4">Würzburg, Germany</div>
+              <div className="col-5 col-md-2"><ChevronRight className="text-action" /> <strong>Age:</strong></div>
+              <div className="col-7 col-md-4">29</div>
+
+              <div className="col-5 col-md-2"><ChevronRight className="text-action" /> <strong>Email:</strong></div>
+              <div className="col-7 col-md-4">philip.hannemann@t-online.de</div>
+              <div className="col-5 col-md-2"><ChevronRight className="text-action" /> <strong>Degree:</strong></div>
+              <div className="col-7 col-md-4">Master</div>
+            </div>
+          </ContentSection>
 
           <ContentSection icon={PatchCheck} title="Skills" variant={2}>
 
