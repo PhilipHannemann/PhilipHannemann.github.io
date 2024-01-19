@@ -73,7 +73,7 @@ export default function Home() {
               The actual master thesis was about reducing the energy consumtion of trains by developing a realtime algorithm to optimize the driving strategies based on the timetable and the track constraints.
             </p>
           </ContentSection>
-          <ContentSection title="Be[e]Alive" flip mediaSrc="/projects/IBeeAlive.mp4">
+          <ContentSection title="Be[e]Alive" flip mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1705700789/projects/v4zitmfwmnw6f8wxkj1x.mp4">
             <h3>iOS SwiftUI app for optimizing your insect food</h3>
             <p>
               Due to climate change and the rizing urbanization, insects like bees more and more have trouble finding flowers to provide them food. <br />
