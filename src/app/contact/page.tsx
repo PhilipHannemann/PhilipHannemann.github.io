@@ -1,8 +1,8 @@
 
+import ContentSection from "@/components/ContentSection"
 import Footer from "@/components/Footer"
 import NavBarV2 from "@/components/NavBar"
-import SectionHeadline from "@/components/SectionHeadline"
-import { Envelope } from "react-bootstrap-icons"
+import { Envelope, Github, Linkedin, Phone } from "react-bootstrap-icons"
 
 export default function Home() {
 
@@ -19,17 +19,27 @@ export default function Home() {
 
         <main>
         <NavBarV2 />
-          <section id="contact" className="contact bg-white">
-            <div className="container">
+        <ContentSection icon={Envelope} title="Contact" mediaSrc="/PhilipHannemann.JPG">
+            <h3>Let's Connect</h3>
+            <p>As an applied computer science graduate from TU Chemnitz / San José State / Stanford University and my long professional time as a software engineer at various different companies, I am the perfect fit for developing your groundbraking solutions.</p>
+            <p>
+              If I made you curious, let's connect: 
+            </p>
 
-              <SectionHeadline icon={Envelope} >Contact</SectionHeadline>
-              <div className="section-title">
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-              </div>
+            <div className="grid-container-2">
+                <div><span className="text-action">@</span>&nbsp;&nbsp;<strong>Email:</strong></div>
+                <div>philip.hannemann@t-online.de</div>
+              
+                <div><Linkedin className="text-action" />&nbsp;&nbsp;<strong>LinkedIn:</strong></div>
+                <div><a className="link text-break" href="www.linkedin.com/in/philiphannemann">linkedin.com/in/philiphannemann</a></div>
+    
+                <div><Github className="text-action" />&nbsp;&nbsp;<strong>Git:</strong></div>
+                <div><a className="link text-break" href="https://github.com/PhilipHannemann">github.com/PhilipHannemann</a></div>
 
+                <div><Phone className="text-action" />&nbsp;&nbsp;<strong>Phone:</strong></div>
+                <div>+49 176 8505 1499</div>
             </div>
-          </section>
-
+          </ContentSection>
         </main>
 
         <Footer/>
