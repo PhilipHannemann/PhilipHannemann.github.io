@@ -29,7 +29,7 @@ export default function Home() {
 
               <SectionHeadline icon={Clipboard2DataFill} >Resume</SectionHeadline>
               <div className="section-title">
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                <p>During my career as a computer scientist, I have been involved in many innovative automated systems that redefine convenience, efficiency, and sustainability.</p>
               </div>
 
               <Resume carrier={CARRIER} education={EDUCATION} />
@@ -39,7 +39,6 @@ export default function Home() {
         </main>
 
         <Footer />
-
       </div>
     </>
   )

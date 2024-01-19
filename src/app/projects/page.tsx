@@ -20,7 +20,7 @@ export default function Home() {
         <main>
           <NavBarV2 />
           <ContentSection icon={Git} title="Projects" mediaSrc="/future.jpeg" flip mediaSubtitle="DALL-E 3 generated image based on my career">
-            <h3>Head of Process Automation &amp; Developer.</h3>
+            <h3>Head of Process Automation &amp; Developer</h3>
             <p>During my career as a computer scientist, I have been involved in many innovative automated systems that redefine convenience, efficiency, and sustainability.</p>
             <p>
               All began with an internship at the IAV, where I contributed to the creation of a groundbreaking system — the Concierge Service. This pioneering initiative empowered vehicles to autonomously perform multiple tasks at parking spaces. It enabled cars to handle activities such as car maintenance, finding parking spaces, and even executing repairs fully autonomously.
@@ -29,10 +29,10 @@ export default function Home() {
               During my master thesis, I architected real-time optimization algorithms in C++ to make trains more energy-efficient. I focused on crafting algorithms aimed at energy efficiency by calculating the optimal driving strategies in real-time - an solution that holds immense promise for sustainable transportation solutions.
             </p>
             <p>
-              As a Software Engenier I started a job at STTech what further fueled my passion for automated systems as I had the chance in developing autonomous cleaning robots build for the demands of expansive spaces like supermarkets and warehouses and working on autonomous car driving solutions.
+              As a software engenier I started a job at STTech what further fueled my passion for automated systems as I had the chance in developing autonomous cleaning robots build for the demands of expansive spaces like supermarkets and warehouses and working on autonomous car driving solutions.
             </p>
             <p>
-              After 1,5 years at STTech, serving as the Head of Process Automation, my focus was to revolutionize the claim handling processes for insurance companies, particularly within the domain of dentist invoices. This domain allowed me to leverage automation to enhance efficiency, accuracy, and customer satisfaction.
+              After 1.5 years at STTech, serving as the head of process automation, my focus was to revolutionize the claim handling processes for insurance companies, particularly within the domain of dentist invoices. This domain allowed me to leverage automation to enhance efficiency, accuracy, and customer satisfaction.
             </p>
           </ContentSection>
           <ContentSection mediaLarge title="Claim Automation" variant={2} mediaSubtitle="Demo: Left - The client side SwiftUI App. Right - Insurance App for an optimised emplyee experience" mediaSrc="/projects/TaskMate.mp4">
