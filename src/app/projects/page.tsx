@@ -35,7 +35,7 @@ export default function Home() {
               After 1.5 years at STTech, serving as the head of process automation, my focus was to revolutionize the claim handling processes for insurance companies, particularly within the domain of dentist invoices. This domain allowed me to leverage automation to enhance efficiency, accuracy, and customer satisfaction.
             </p>
           </ContentSection>
-          <ContentSection mediaLarge title="Claim Automation" variant={2} mediaSubtitle="Demo: Left - The client side SwiftUI App. Right - Insurance App for an optimised emplyee experience" mediaSrc="/projects/TaskMate.mp4">
+          <ContentSection mediaLarge title="Claim Automation" variant={2} mediaSubtitle="Demo: Left - The client side SwiftUI App. Right - Insurance App for an optimised emplyee experience" mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1701982133/projects/p7aftxks9fwdytvstro5.mp4">
             <h3>Leading the Process Automation Team</h3>
             <p>Experience streamlined insurance claim handling. Our innovative application showcases a split-screen demo. On one side, clients effortlessly scan and submit documents via a native iOS app. On the other, insurance employees access a tool for manual processing, swiftly addressing OCR errors or client queries.</p>
             <p>
@@ -44,7 +44,7 @@ export default function Home() {
             <p>This demo highlights our application's powers with routine tasks while seamlessly accommodating manual intervention when needed.</p>
 
           </ContentSection>
-          <ContentSection title="Set" flip mediaSrc="/projects/Set.mp4" mediaSubtitle="Set executed in a Swift-Playground">
+          <ContentSection title="Set" flip mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1701981634/projects/bglpswalqwhbnekekf1f.mp4" mediaSubtitle="Set executed in a Swift-Playground">
             <h3>iOS UIKit App for Playing Set</h3>
             <p>Since I like playing the card game Set I developed this app while I was learning how to write propper iOS apps</p>
             <p>It has many different parts, what prove my coding skills. <br/> The multiple parts include: 
@@ -60,7 +60,7 @@ export default function Home() {
             </p>
 
           </ContentSection>
-          <ContentSection mediaLarge title="Throw Optimization" variant={2} mediaSrc="/projects/demoThrowOptimization.gif">
+          <ContentSection mediaLarge title="Throw Optimization" variant={2} mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1701985790/projects/godeg7kmbkw370w6cx24.mp4">
             <h3>Optimizing the throwing strength</h3>
             <p>During my master thesis at <b>Siemens Mobility</b> I was working on very interesting and challenging algorithmic tasks. The master thesis itself is closed source for 5 years but what I can show is the peparation work for it.</p>
             <p>
