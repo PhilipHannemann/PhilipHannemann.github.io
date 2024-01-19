@@ -36,6 +36,6 @@ yarn-error.log*
 next-env.d.ts
 
 # data
-.mp4
-.MP4
-.gif
+*.mp4
+*.MP4
+*.gif
