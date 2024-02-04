@@ -25,8 +25,8 @@ export default function About() {
         <Header title="Philip Hannemann" typed={I_AM} />
 
         <main>
-          <ContentSection icon={Person} title="About Me" mediaSrc="/PhilipHannemann.JPG">
           <NavBar />
+          <ContentSection icon={Person} title="About Me" mediaSrc="/philip_klein.JPG">
             <h3>Head of Process Automation &amp; Developer</h3>
             <p>As an applied computer science graduate from TU Chemnitz, I am pushing the boundaries of technology and innovation. My journey has taken me from cutting-edge research to leading the process automation team at STTech.</p>
             <p>

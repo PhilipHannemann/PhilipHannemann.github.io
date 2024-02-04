@@ -16,7 +16,7 @@ export default function Home() {
         <NavBar />
 
         <main>
-        <ContentSection icon={Envelope} title="Contact" mediaSrc="/PhilipHannemann.JPG">
+          <ContentSection icon={Envelope} title="Contact" mediaSrc="/philip_klein.JPG">
             <h3>Let&apos;s Connect</h3>
             <p>As an applied computer science graduate from TU Chemnitz / San José State / Stanford University and my long professional time as a software engineer at various different companies, I am the perfect fit for developing your groundbraking solutions.</p>
             <p>
