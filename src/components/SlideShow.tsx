@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 
 const SEC_TO_MS = 1_000;
@@ -36,11 +37,13 @@ export default function SlideShow({ slides, alt, delay = 0 }: SlideShowProps) {
   if (!slides.length) return <></>;
 
   return slides.map((slide, index) => (
-    <img
+    <Image
       key={index}
       src={slide}
       alt={alt}
       className={`slide ${index == presentedSlide ? "show" : ""}`}
+      fill
+      style={{ objectFit: "cover" }}
     />
   ));
 }
