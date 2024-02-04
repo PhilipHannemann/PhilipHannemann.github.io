@@ -4,7 +4,7 @@ import { Skill } from "@/components/SkillSet";
 import { CodeSlash, House, PatchCheck } from "react-bootstrap-icons";
 
 export const ABOUT_DATA: ListElement[] = [
-  [CodeSlash, "Website:", <Link href="https://philiphannemann.github.io">philiphannemann.github.io</Link>],
+  [CodeSlash, "Website:", <Link key="web" href="https://philiphannemann.github.io">philiphannemann.github.io</Link>],
   [House, "City:", "Würzburg, Germany"],
   [() => "@", "Email:", "philip.hannemann@t-online.de"],
   [PatchCheck, "Degree:", "Master"],

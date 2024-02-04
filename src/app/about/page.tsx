@@ -7,17 +7,17 @@ import NavBar from "@/components/NavBar"
 import SkillSet from "@/components/SkillSet"
 import { ABOUT_DATA, SKILLS } from "@/constants/about"
 import { I_AM } from "@/constants/resume"
+import { Fragment } from "react"
 import { Person, PatchCheck } from "react-bootstrap-icons"
 
 export default function About() {
 
   const skills = SKILLS.map(({ name, left, right }) => (
-    <>
+    <Fragment key={name}>
       <h3 className="mt-5">{name}</h3>
       <SkillSet leftSkills={left} rightSkills={right} />
-    </>
+    </Fragment>
   ))
-
 
   return (
     <>
