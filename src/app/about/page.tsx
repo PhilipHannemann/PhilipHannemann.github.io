@@ -5,20 +5,15 @@ import NavBarV2 from "@/components/NavBar"
 import ProgressBar from "@/components/ProgressBar"
 import Type from "@/components/Type"
 import { Person, ChevronRight, PatchCheck } from "react-bootstrap-icons"
+import Header from "@/components/Header"
+import { I_AM } from "@/constants/resume"
 
 export default function About() {
 
   return (
     <>
       <div className="paralax-container">
-        <header className="h-100">
-          <img src="/Philip.JPG" alt="Philip Hannemann" />
-          <div className="blend-container blend-in" />
-          <div className="text-container">
-            <h1 className="display-3">Philip Hannemann</h1>
-            <h4><Type prefix="I'm " text={["a Senior Developer", "a Data Scientist", "a Full-Stack Developer", "Head of Process Automation"]} /></h4>
-          </div>
-        </header>
+        <Header title="Philip Hannemann" typed={I_AM} />
 
         <main>
           <NavBarV2 />

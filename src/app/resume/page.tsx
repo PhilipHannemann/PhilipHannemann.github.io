@@ -3,8 +3,7 @@ import Footer from "@/components/Footer"
 import NavBarV2 from "@/components/NavBar"
 import Resume from "@/components/Resume"
 import SectionHeadline from "@/components/SectionHeadline"
-import Type from "@/components/Type"
-import { CARRIER, EDUCATION } from "@/constants/resume"
+import { CARRIER, EDUCATION, HEADER_SLIDES, I_AM } from "@/constants/resume"
 import { Clipboard2DataFill } from "react-bootstrap-icons"
 
 export default function Home() {
@@ -12,14 +11,7 @@ export default function Home() {
   return (
     <>
       <div className="paralax-container">
-        <header className="h-100">
-          <img src="/Philip.JPG" alt="Philip Hannemann" />
-          <div className="blend-container blend-in" />
-          <div className="text-container">
-            <h1 className="display-3">Resume</h1>
-            <h4>I&apos;m <Type text={["a Senior Developer", "a Data Scientist", "a Full-Stack Developer", "Head of Process Automation"]} /></h4>
-          </div>
-        </header>
+        <Header title="Resume" typed={I_AM} slideShow={HEADER_SLIDES} />
 
         <main>
           <NavBarV2 />

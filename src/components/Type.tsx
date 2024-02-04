@@ -1,10 +1,10 @@
 "use client"
 
-import { createElement, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 
 interface TypeProps {
-    text: string[],
+    text: ReadonlyArray<string>,
     typeSpeed?: number,
     prefix?: string,
 }
@@ -27,5 +27,5 @@ export default function Type({ text, typeSpeed = 100, prefix = "" }: TypeProps) 
     }, [prefix, text, typeSpeed]);
 
     
-    return <span className='type-container' ref={ref} />
+    return <span className='type-container text-shadow' ref={ref} />
 }

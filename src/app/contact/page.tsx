@@ -3,19 +3,14 @@ import ContentSection from "@/components/ContentSection"
 import Footer from "@/components/Footer"
 import NavBarV2 from "@/components/NavBar"
 import { Envelope, Github, Linkedin, Phone } from "react-bootstrap-icons"
+import Header from "@/components/Header"
 
 export default function Home() {
 
   return (
     <>
       <div className="paralax-container">
-        <header className="h-100">
-            <img src="/Philip.JPG" alt="Philip Hannemann" />
-            <div className="blend-container blend-in" />
-            <div className="text-container">
-              <h1 className="display-3">Contact</h1>
-            </div>
-        </header>
+        <Header title="Contact" />
 
         <main>
         <NavBarV2 />
