@@ -10,28 +10,26 @@ import { Clipboard2DataFill } from "react-bootstrap-icons"
 export default function Home() {
 
   return (
-    <>
-      <div className="paralax-container">
-        <Header title="Resume" typed={I_AM} slideShow={HEADER_SLIDES} />
-        <NavBar />
+    <div className="paralax-container">
+      <Header title="Resume" typed={I_AM} slideShow={HEADER_SLIDES} />
+      <NavBar />
 
-        <main>
-          <section id="resume" className="resume bg-white">
-            <div className="container">
+      <main>
+        <section id="resume" className="resume bg-white">
+          <div className="container">
 
-              <SectionHeadline icon={Clipboard2DataFill} >Resume</SectionHeadline>
-              <div className="section-title">
-                <p>During my career as a computer scientist, I have been involved in many innovative automated systems that redefine convenience, efficiency, and sustainability.</p>
-              </div>
-
-              <Resume carrier={CARRIER} education={EDUCATION} />
+            <SectionHeadline icon={Clipboard2DataFill}>Resume</SectionHeadline>
+            <div className="section-title">
+              <p>During my career as a computer scientist, I have been involved in many innovative automated systems that redefine convenience, efficiency, and sustainability.</p>
             </div>
-          </section>
 
-        </main>
+            <Resume carrier={CARRIER} education={EDUCATION} />
+          </div>
+        </section>
 
-        <Footer />
-      </div>
-    </>
+      </main>
+
+      <Footer />
+    </div>
   )
 }
