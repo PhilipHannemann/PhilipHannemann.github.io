@@ -1,6 +1,6 @@
 
 import Footer from "@/components/Footer"
-import NavBarV2 from "@/components/NavBar"
+import NavBar from "@/components/NavBar"
 import { Git, Linkedin } from "react-bootstrap-icons"
 import ContentSection from "@/components/ContentSection"
 import Header from "@/components/Header"
@@ -11,9 +11,9 @@ export default function Home() {
     <>
       <div className="paralax-container">
         <Header title="Projects" />
+        <NavBar />
 
         <main>
-          <NavBarV2 />
           <ContentSection icon={Git} title="Projects" mediaSrc="/future.jpeg" flip mediaSubtitle="DALL-E 3 generated image based on my career">
             <h3>Head of Process Automation &amp; Developer</h3>
             <p>During my career as a computer scientist, I have been involved in many innovative automated systems that redefine convenience, efficiency, and sustainability.</p>

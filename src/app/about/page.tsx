@@ -1,8 +1,9 @@
 
 import ContentSection from "@/components/ContentSection"
+import DataList from "@/components/DataList"
 import Footer from "@/components/Footer"
-import NavBarV2 from "@/components/NavBar"
 import Header from "@/components/Header"
+import NavBar from "@/components/NavBar"
 import SkillSet from "@/components/SkillSet"
 import { ABOUT_DATA, SKILLS } from "@/constants/about"
 import { I_AM } from "@/constants/resume"
@@ -24,8 +25,8 @@ export default function About() {
         <Header title="Philip Hannemann" typed={I_AM} />
 
         <main>
-          <NavBarV2 />
           <ContentSection icon={Person} title="About Me" mediaSrc="/PhilipHannemann.JPG">
+          <NavBar />
             <h3>Head of Process Automation &amp; Developer</h3>
             <p>As an applied computer science graduate from TU Chemnitz, I am pushing the boundaries of technology and innovation. My journey has taken me from cutting-edge research to leading the process automation team at STTech.</p>
             <p>

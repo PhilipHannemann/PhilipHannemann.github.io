@@ -1,6 +1,7 @@
 
 import Footer from "@/components/Footer"
-import NavBarV2 from "@/components/NavBar"
+import Header from "@/components/Header"
+import NavBar from "@/components/NavBar"
 import Resume from "@/components/Resume"
 import SectionHeadline from "@/components/SectionHeadline"
 import { CARRIER, EDUCATION, HEADER_SLIDES, I_AM } from "@/constants/resume"
@@ -12,10 +13,9 @@ export default function Home() {
     <>
       <div className="paralax-container">
         <Header title="Resume" typed={I_AM} slideShow={HEADER_SLIDES} />
+        <NavBar />
 
         <main>
-          <NavBarV2 />
-
           <section id="resume" className="resume bg-white">
             <div className="container">
 

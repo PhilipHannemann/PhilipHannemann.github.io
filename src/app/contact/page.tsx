@@ -2,8 +2,8 @@
 import ContentSection from "@/components/ContentSection"
 import DataList from "@/components/DataList"
 import Footer from "@/components/Footer"
-import NavBarV2 from "@/components/NavBar"
 import Header from "@/components/Header"
+import NavBar from "@/components/NavBar"
 import { CONTACT_DATA } from "@/constants/contact"
 import { Envelope } from "react-bootstrap-icons"
 
@@ -13,9 +13,9 @@ export default function Home() {
     <>
       <div className="paralax-container">
         <Header title="Contact" />
+        <NavBar />
 
         <main>
-        <NavBarV2 />
         <ContentSection icon={Envelope} title="Contact" mediaSrc="/PhilipHannemann.JPG">
             <h3>Let&apos;s Connect</h3>
             <p>As an applied computer science graduate from TU Chemnitz / San José State / Stanford University and my long professional time as a software engineer at various different companies, I am the perfect fit for developing your groundbraking solutions.</p>
