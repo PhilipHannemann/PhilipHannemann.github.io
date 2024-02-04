@@ -164,6 +164,14 @@ h6 {
   }
 }
 
+.slide {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.slide.show {
+  opacity: 1;
+}
 
 /* header */
 
@@ -258,7 +266,6 @@ section {
   margin-bottom: 10px;
 }
 
-
 .resume .resume-item::before {
   content: "";
   position: absolute;
@@ -285,4 +292,13 @@ section {
   display: grid;
   grid-template-columns: max-content 1fr;
   grid-gap: 10px;
+}
+
+.stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(190, 190, 190)
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 8px #8f8f8f;
 }
