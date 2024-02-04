@@ -1,5 +1,12 @@
 import { type ResumeEntry } from "@/components/Resume"
 
+export const I_AM = ["a Senior Developer", "a Data Scientist", "a Full-Stack Developer", "Head of Process Automation"] as const
+
+export const HEADER_SLIDES = [
+    "/education_stanford.JPG",
+    "/education_sjsu.JPG",
+    "/education_tuc.JPG",
+] as const
 
 export const EDUCATION: ReadonlyArray<ResumeEntry> = [
     {
