@@ -1,15 +1,15 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import { ReactNode, useEffect } from 'react'
-import './globals.css'
-import LoadBootstrap from '@/components/utils/LoadBootstrap'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ReactNode } from "react";
+import "./globals.css";
+import LoadBootstrap from "@/components/utils/LoadBootstrap";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Philip Hannemann',
-  description: 'Head of Process Automation',
-}
+  title: "Philip Hannemann",
+  description: "Head of Process Automation",
+};
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -17,5 +17,5 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <LoadBootstrap />
       <body className={inter.className}>{children}</body>
     </html>
-  )
+  );
 }

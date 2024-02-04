@@ -61,7 +61,6 @@ section {
   min-height: 100vh;
 }
 
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -97,7 +96,6 @@ body {
     display: none;
   }
 }
-
 
 h1,
 h2,
@@ -220,7 +218,6 @@ header .type-container span {
 # Sections General
 --------------------------------------------------------------*/
 
-
 section {
   padding: 60px 0;
 }
@@ -241,7 +238,6 @@ section {
   font-size: 26px;
   color: var(--color-blue);
 }
-
 
 /*--------------------------------------------------------------
 # Resume
@@ -296,7 +292,7 @@ section {
 
 .stroke {
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(190, 190, 190)
+  -webkit-text-stroke-color: rgb(190, 190, 190);
 }
 
 .text-shadow {
