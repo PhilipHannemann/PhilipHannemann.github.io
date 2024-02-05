@@ -159,22 +159,41 @@ export default function Home() {
           title="Be[e]Alive"
           flip
           mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1705700789/projects/v4zitmfwmnw6f8wxkj1x.mp4"
+          mediaSubtitle="SwiftUI App recorded on an iPhone."
         >
-          <h3>iOS SwiftUI app for optimizing your insect food</h3>
+          <h3>iOS SwiftUI app for optimizing insect food</h3>
           <p>
-            Due to climate change and the rizing urbanization, insects like bees
-            more and more have trouble finding flowers to provide them food.{" "}
-            <br />
-            This app trys to help cities or any othere gardener to pick the
-            right collection of flowers in the garden to have flowers the entire
-            year.
+            In the face of climate change and escalating urbanization,
+            pollinators such as bees encounter challenges in locating abundant
+            floral resources. So I invented an App — an innovative solution
+            designed to assist cities and avid gardeners in selecting the
+            optimal assortment of flowers throughout the year.
           </p>
           <p>
-            The App is made with SwiftUI and connects to an self hosted api with
-            a databse of flowers. The database is work in progress and needs to
-            now get filled with flowers, but the app is already close for
-            shipping to the app store. <br />
-            It has a plant search, a calendar and an overview page.
+            <b>Key Features:</b>
+            <ul className="py-2">
+              <li>
+                <b>Intelligent Plant Selection</b>: The app uses SwiftUI for an
+                intuitive interface that simplifies the process of choosing the
+                right mix of flowers, fostering a continuous bloom.
+              </li>
+              <li>
+                <b>Connected to a Netcup-Hosted API</b>: Leveraging a
+                self-created API, the app seamlessly integrates with a growing
+                flower database. Although the database is a work in progress,
+                the app is on the edge of being released to the App Store.
+              </li>
+              <li>
+                <b>Functionalities</b>: The app boasts a robust set of features,
+                including a plant search, a calendar for optimal planting times,
+                and an overview page for quick reference.
+              </li>
+            </ul>
+          </p>
+          <p>
+            While the database is currently in development, the vision is to
+            populate it comprehensively with a diverse array of flowers,
+            ensuring a rich and ever-expanding resource for users.
           </p>
         </ContentSection>
         <ContentSection
