@@ -90,30 +90,36 @@ export default function Home() {
         >
           <h3>iOS UIKit App for Playing Set</h3>
           <p>
-            Since I like playing the card game Set I developed this app while I
-            was learning how to write propper iOS apps
+            Driven by my passion for the card game Set, I developed an iOS app
+            to further enhance my skills in iOS app development.
           </p>
           <p>
-            It has many different parts, what prove my coding skills. <br /> The
-            multiple parts include:
+            This comprehensive app showcases my coding proficiency through
+            various details, including:
             <ul className="py-2">
-              <li>Creating a nice looking app with UIKit and Swift</li>
+              <li>Creating an aesthetically interface using UIKit and Swift</li>
               <li>
-                Styling the individual cards with custom shapes created with
-                bezier paths
+                Implementing unique card designs with custom shapes created
+                using bezier paths
               </li>
               <li>
-                Writing the game logic with automatic set detection in Swift
+                Developing robust game logic with automatic set detection in
+                Swift
               </li>
             </ul>
           </p>
           <p>
-            It has three different play modes: singleplayer, multiplayer and
-            playing against the AI. <br />
-            It also knows if the selected cards are equivilant to a Set or not
-            and it also shows with a green background color on the &quot;3 More
-            Cards&quot;-button, if there are no Sets on the table and it is safe
-            to press this button.
+            The app offers three distinct play modes: single-player,
+            multiplayer, and the option to challenge an AI opponent. Notably, it
+            intelligently determines whether the selected cards form a Set and
+            features a user-friendly indicator – a green background on the
+            &quot;3 More Cards&quot; button – signaling a safe time to proceed
+            when no Sets are present on the table.
+          </p>
+          <p>
+            This project reflects not only my dedication to mastering iOS app
+            development but also my commitment to delivering a polished and
+            enjoyable user experience.
           </p>
         </ContentSection>
         <ContentSection
