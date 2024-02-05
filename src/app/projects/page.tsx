@@ -203,21 +203,31 @@ export default function Home() {
           variant={2}
           mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1705705811/projects/trjkmhb9orwfppierm6g.mp4"
         >
-          <h3>Webapp for training your skills</h3>
+          <h3>Skill Training Web App: Reinventing Skill Assessments</h3>
           <p>
-            LinkedIn used to have skill assessments what a GitHub user crawled
-            into markdown files.
+            I developed an innovative web application to enhance skill training,
+            inspired by LinkedIn&apos;s former skill assessments. The app
+            converts GitHub-crawled markdown files into JSON data, creating a
+            dynamic question pool.
           </p>
           <p>
-            I developed an application what can convert the markdown files into
-            JSON data and uses it to ask you skills the same way LinkedIn used
-            to do.
-          </p>
-          <p>
-            It is connected to a mongoDB and stores your results and asks you
-            first only questions that have not been asked before and afterwards
-            the questions which where wrongly answered, before it starts with
-            the same questions that where already answered correctly.
+            <b>Key Features:</b>
+            <ul className="py-2">
+              <li>
+                <b>MongoDB Integration</b>: Seamlessly connected to MongoDB,
+                storing user progress and results for a personalized learning
+                experience.
+              </li>
+              <li>
+                <b>Adaptive Questioning</b>: Utilizes a smart algorithm to
+                present new questions, revisit incorrect answers, and strengthen
+                understanding by revisiting correctly answered questions.
+              </li>
+              <li>
+                <b>LinkedIn-inspired Interface</b>: Recreates the engaging skill
+                assessment experience, for continuous skill development.
+              </li>
+            </ul>
           </p>
         </ContentSection>
       </main>
