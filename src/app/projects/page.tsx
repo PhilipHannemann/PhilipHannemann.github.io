@@ -128,6 +128,7 @@ export default function Home() {
           mediaSubtitle="With OpenGL rendered graph for showing the ball trajectory in 2D space."
           variant={2}
           mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1701985790/projects/godeg7kmbkw370w6cx24.mp4"
+          repository="https://github.com/PhilipHannemann/throwOptimization"
         >
           <h3>Optimizing the throwing strength</h3>
           <p>

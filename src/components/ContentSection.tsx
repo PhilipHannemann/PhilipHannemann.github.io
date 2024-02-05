@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import SectionHeadline from "./SectionHeadline";
-import { type Icon } from "react-bootstrap-icons";
+import { Github, type Icon } from "react-bootstrap-icons";
 import Video from "./Video";
 
 interface ContentSectionProps {
@@ -12,7 +12,10 @@ interface ContentSectionProps {
   mediaLarge?: boolean;
   flip?: boolean;
   mediaSubtitle?: string;
+  repository?: string;
 }
+
+type ImgProps = Parameters<typeof Video>[0];
 
 export default function ContentSection({
   title,
@@ -23,10 +26,11 @@ export default function ContentSection({
   mediaLarge,
   flip,
   mediaSubtitle,
+  repository,
 }: ContentSectionProps) {
   const isVideo = mediaSrc?.endsWith(".mp4");
 
-  const Img = (props: Parameters<typeof Video>[0]) => <img {...props} alt="" />;
+  const Img = (props: ImgProps) => <img {...props} alt="demo" />;
   const Media = isVideo ? Video : Img;
 
   const mediaSize = mediaLarge ? "col-lg-7" : "col-lg-4";
@@ -35,11 +39,20 @@ export default function ContentSection({
       className={`${mediaSize} d-flex align-items-center`}
       data-aos="fade-right"
     >
-      <div>
+      <div className="position-relative">
         <Media src={mediaSrc} className="img-fluid rounded my-3" />
         <p className="text-center w-100">
           <i>{mediaSubtitle}</i>
         </p>
+        {repository && (
+          <a
+            href={repository}
+            className="position-absolute top-0 link"
+            style={{ right: -16 }}
+          >
+            <Github className="h2 bg-white rounded-circle" />
+          </a>
+        )}
       </div>
     </div>
   );
