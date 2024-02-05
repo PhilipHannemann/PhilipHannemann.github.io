@@ -125,31 +125,34 @@ export default function Home() {
         <ContentSection
           mediaLarge
           title="Throw Optimization"
+          mediaSubtitle="With OpenGL rendered graph for showing the ball trajectory in 2D space."
           variant={2}
           mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1701985790/projects/godeg7kmbkw370w6cx24.mp4"
         >
           <h3>Optimizing the throwing strength</h3>
           <p>
-            During my master thesis at <b>Siemens Mobility</b> I was working on
-            very interesting and challenging algorithmic tasks. The master
-            thesis itself is closed source for 5 years but what I can show is
-            the peparation work for it.
+            During my master thesis at <b>Siemens Mobility</b>, I came across a
+            series of algorithmic challenges, particularly focusing here on the
+            preparation work for my closed-source master thesis, which is
+            protected for five years.
           </p>
           <p>
-            The task was to calculate the optimal throwing strength of a ball
-            for a given destination in realtime. <br />
-            You can see that the result is very good. It shows the flying ball
-            over time with the optimal strength. <br />
-            You can also see that the calculation takes less than 20ms to
-            compute with algorithm 2, why it is possible to change the start
-            position in realtime. <br />
-            When instead using the algorithm 1 what is the brute force approach,
-            it would not be realtime.
+            The core preparation task involved calculating the optimal throwing
+            strength of a ball for a given destination in real-time. The visible
+            outcome is a remarkable simulation demonstrating the trajectory of a
+            ball over time, precisely executed with the optimal strength.
+            Noteworthy is the efficiency of the computation – accomplished in
+            less than 20ms enabling real-time adjustments to the start position.
+            In contrast the brute force approach, renders real-time performance
+            unattainable with multiple seconds.
           </p>
           <p>
-            The actual master thesis was about reducing the energy consumtion of
-            trains by developing a realtime algorithm to optimize the driving
-            strategies based on the timetable and the track constraints.
+            While the specific details of the master thesis remain confidential,
+            its overarching goal was groundbreaking – aimed at reducing energy
+            consumption in trains. The focus was on the development of a
+            real-time algorithm to optimize driving strategies based on the
+            timetable and track constraints, thereby contributing to the broader
+            initiative of sustainable and efficient transportation systems.
           </p>
         </ContentSection>
         <ContentSection
