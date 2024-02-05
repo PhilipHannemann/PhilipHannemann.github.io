@@ -66,6 +66,10 @@ body {
   color: #272829;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .link {
   color: var(--color-dark-blue) !important;
   text-decoration: none !important;
