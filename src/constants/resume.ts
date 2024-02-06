@@ -1,5 +1,6 @@
 import { type ResumeEntry } from "@/components/Resume";
 
+/** titles for getting typed on the about and resume page */
 export const I_AM = [
   "a Senior Developer",
   "a Data Scientist",
@@ -7,12 +8,14 @@ export const I_AM = [
   "Head of Process Automation",
 ] as const;
 
+/** image paths for the header slideshow  */
 export const HEADER_SLIDES = [
   "/education_stanford.JPG",
   "/education_sjsu.JPG",
   "/education_tuc.JPG",
 ] as const;
 
+/** resume entries for the educational history */
 export const EDUCATION: ReadonlyArray<ResumeEntry> = [
   {
     headline: "Master of Applied Computer Science",
@@ -46,6 +49,7 @@ export const EDUCATION: ReadonlyArray<ResumeEntry> = [
   },
 ];
 
+/** resume entries for the professional history */
 export const CARRIER: ReadonlyArray<ResumeEntry> = [
   {
     headline: "Head of Process automation",
@@ -90,4 +94,4 @@ export const CARRIER: ReadonlyArray<ResumeEntry> = [
       "During my studies at the TU Chemnitz I was working as a working student to help optimize the website. I build a new more organized website structue and added search and filter functionalities. All was build with php on the backend side and JavaScript, HTML and CSS on the client side.",
     workingOn: [],
   },
-] as const;
+];

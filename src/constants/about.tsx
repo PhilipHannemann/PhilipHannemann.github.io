@@ -3,6 +3,7 @@ import Link from "@/components/Link";
 import { Skill } from "@/components/SkillSet";
 import { CodeSlash, House, PatchCheck } from "react-bootstrap-icons";
 
+/** The data to be displayed in the about me section. */
 export const ABOUT_DATA: ListElement[] = [
   [
     CodeSlash,
@@ -17,11 +18,15 @@ export const ABOUT_DATA: ListElement[] = [
 ] as const;
 
 interface SkillSet {
+  /** An array of skills to be displayed on the left side. */
   left: ReadonlyArray<Skill>;
+  /** An array of skills to be displayed on the right side. */
   right: ReadonlyArray<Skill>;
+  /** The name of the skill group. */
   name: string;
 }
 
+/** The skills to be displayed on the about page with progress bars. */
 export const SKILLS = [
   {
     name: "Main Programming Languages",

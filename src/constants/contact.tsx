@@ -2,6 +2,7 @@ import { ListElement } from "@/components/DataList";
 import Link from "@/components/Link";
 import { Github, Linkedin, Phone } from "react-bootstrap-icons";
 
+/** The data to be displayed in the contact section. */
 export const CONTACT_DATA: ListElement[] = [
   [() => "@", "Email:", "philip.hannemann@t-online.de"],
   [
