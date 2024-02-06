@@ -1,12 +1,15 @@
-import ContentSection from "@/components/ContentSection";
+import ContentSection from "@/components/layout/ContentSection";
 import DataList from "@/components/DataList";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import NavBar from "@/components/layout/NavBar";
 import { CONTACT_DATA } from "@/constants/contact";
 import { Envelope } from "react-bootstrap-icons";
 
-export default function Home() {
+/**
+ * Renders the Contact page.
+ */
+export default function Contact() {
   return (
     <div className="paralax-container">
       <Header title="Contact" />

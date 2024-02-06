@@ -1,12 +1,15 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import NavBar from "@/components/layout/NavBar";
 import Resume from "@/components/Resume";
-import SectionHeadline from "@/components/SectionHeadline";
+import SectionHeadline from "@/components/layout/SectionHeadline";
 import { CARRIER, EDUCATION, HEADER_SLIDES, I_AM } from "@/constants/resume";
 import { Clipboard2DataFill } from "react-bootstrap-icons";
 
-export default function Home() {
+/**
+ * Renders the Resume page.
+ */
+export default function ResumePage() {
   return (
     <div className="paralax-container">
       <Header title="Resume" typed={I_AM} slideShow={HEADER_SLIDES} />

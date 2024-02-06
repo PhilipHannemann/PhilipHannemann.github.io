@@ -1,10 +1,13 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
+import Footer from "@/components/layout/Footer";
+import NavBar from "@/components/layout/NavBar";
 import { Git, Linkedin } from "react-bootstrap-icons";
-import ContentSection from "@/components/ContentSection";
-import Header from "@/components/Header";
+import ContentSection from "@/components/layout/ContentSection";
+import Header from "@/components/layout/Header";
 
-export default function Home() {
+/**
+ * Renders the Projects page.
+ */
+export default function Projects() {
   return (
     <div className="paralax-container">
       <Header title="Projects" />
