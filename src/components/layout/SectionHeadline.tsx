@@ -2,10 +2,16 @@ import { ReactNode } from "react";
 import { type Icon } from "react-bootstrap-icons";
 
 interface SectionHeadlineProps {
+  /** The optional icon to display left the headline. */
   icon?: Icon;
+
+  /** The headline content. */
   children: ReactNode;
 }
 
+/**
+ * Renders a headline with an optional icon.
+ */
 export default function SectionHeadline({
   icon: TIcon,
   children,
