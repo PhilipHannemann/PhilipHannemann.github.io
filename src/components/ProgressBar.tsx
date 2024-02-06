@@ -1,8 +1,14 @@
 interface ProgressBarProps {
+  /** The percentage value of the progress bar. */
   percentage: number;
+
+  /** The title of the progress bar. */
   title: string;
 }
 
+/**
+ * Renders a progress bar with the specified percentage and title.
+ */
 export default function ProgressBar({ percentage, title }: ProgressBarProps) {
   return (
     <div className="py-1">
