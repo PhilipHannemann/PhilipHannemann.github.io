@@ -1,9 +1,14 @@
 import { Github } from "react-bootstrap-icons";
 
 interface FooterProps {
+  /** If true, the footer shows additional information about the website. */
   extented?: boolean;
 }
 
+/**
+ * Footer shows thw text at the end of the website.
+ * If extented is true, it shows additional information about the website.
+ */
 export default function Footer({ extented }: FooterProps) {
   const headline = extented && <h3>One More Thing</h3>;
   const description = extented && (
