@@ -1,50 +1,44 @@
+/**
+ * Represents a single entry in the resume.
+ */
 export interface ResumeEntry {
+  /** The job title. */
   headline: string;
+  /** An optional subheadline like the thesis. */
   subheadline?: string;
+  /** The time period of the job. */
   time: string;
+  /** The company or institution. */
   at: string;
+  /** The description of the job. */
   description?: string;
+  /** The projects or tasks worked on. */
   workingOn: string[];
 }
 
+/**
+ * Represents the props for the Resume component.
+ */
 interface ResumeProps {
-  education: readonly ResumeEntry[];
-  carrier: readonly ResumeEntry[];
+  /** The education history. */
+  education: ReadonlyArray<ResumeEntry>;
+  /** The carrier history. */
+  carrier: ReadonlyArray<ResumeEntry>;
 }
 
+/**
+ * Renders a Resume for education and carrier side by side.
+ */
 export default function Resume({ education, carrier }: ResumeProps) {
-  function resumeItemView(
-    { headline, time, workingOn, subheadline, at, description }: ResumeEntry,
-    index: number,
-  ) {
-    const workingOnList = (
-      <ul className="m-0">
-        {workingOn.map((text, i) => (
-          <li className="pb-1" key={i}>
-            {text}
-          </li>
-        ))}
-      </ul>
-    );
-
-    return (
-      <div className="resume-item" key={index}>
-        <h4 className="fw-bolder text-dark text-uppercase h5">{headline}</h4>
-        <div className="pb-2">
-          <i>{subheadline}</i>
-        </div>
-        <h5 className="rounded bg-secondary bg-opacity-25 text-dark">{time}</h5>
-        <h5 className="mx-2 rounded bg-secondary bg-opacity-25 text-dark">
-          @{at}
-        </h5>
-        <p>{description}</p>
-        {workingOnList}
-      </div>
-    );
+  /**
+   * Converts a resume entry to a ResumeItem component.
+   */
+  function resumeEntryToItem(item: ResumeEntry, index: number) {
+    return <ResumeItem {...item} key={index} />;
   }
 
-  const educationView = education.map(resumeItemView);
-  const carrierView = carrier.map(resumeItemView);
+  const educationView = education.map(resumeEntryToItem);
+  const carrierView = carrier.map(resumeEntryToItem);
 
   return (
     <div className="row">
@@ -56,6 +50,43 @@ export default function Resume({ education, carrier }: ResumeProps) {
         <h3 className="text-dark py-4">Professional Experience</h3>
         {carrierView}
       </div>
+    </div>
+  );
+}
+
+/**
+ * The ResumeItem component displays a single resume entry.
+ */
+function ResumeItem({
+  headline,
+  time,
+  workingOn,
+  subheadline,
+  at,
+  description,
+}: ResumeEntry) {
+  const workingOnList = (
+    <ul className="m-0">
+      {workingOn.map((text, i) => (
+        <li className="pb-1" key={i}>
+          {text}
+        </li>
+      ))}
+    </ul>
+  );
+
+  return (
+    <div className="resume-item">
+      <h4 className="fw-bolder text-dark text-uppercase h5">{headline}</h4>
+      <div className="pb-2">
+        <i>{subheadline}</i>
+      </div>
+      <h5 className="rounded bg-secondary bg-opacity-25 text-dark">{time}</h5>
+      <h5 className="mx-2 rounded bg-secondary bg-opacity-25 text-dark">
+        @{at}
+      </h5>
+      <p>{description}</p>
+      {workingOnList}
     </div>
   );
 }
