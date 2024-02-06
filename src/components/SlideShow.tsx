@@ -6,11 +6,19 @@ import { useCallback, useEffect, useState } from "react";
 const SEC_TO_MS = 1_000;
 
 interface SlideShowProps {
+  /** An array of image URLs */
   slides: ReadonlyArray<string>;
+
+  /** The alternative text for the images. */
   alt: string;
-  delay?: number; // seconds
+
+  /** The delay between each slide transition in seconds. */
+  delay?: number;
 }
 
+/**
+ * Represents a slideshow component that displays a series of images with a fade transition.
+ */
 export default function SlideShow({ slides, alt, delay = 0 }: SlideShowProps) {
   const [presentedSlide, setPresentedSlide] = useState(0);
 
