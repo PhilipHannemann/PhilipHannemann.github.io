@@ -1,14 +1,17 @@
-import ContentSection from "@/components/ContentSection";
+import ContentSection from "@/components/layout/ContentSection";
 import DataList from "@/components/DataList";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
+import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
+import NavBar from "@/components/layout/NavBar";
 import SkillSet from "@/components/SkillSet";
 import { ABOUT_DATA, SKILLS } from "@/constants/about";
 import { I_AM } from "@/constants/resume";
 import { Fragment } from "react";
 import { Person, PatchCheck } from "react-bootstrap-icons";
 
+/**
+ * Renders the About page.
+ */
 export default function About() {
   const skills = SKILLS.map(({ name, left, right }) => (
     <Fragment key={name}>
@@ -20,9 +23,9 @@ export default function About() {
   return (
     <div className="paralax-container">
       <Header title="Philip Hannemann" typed={I_AM} />
+      <NavBar />
 
       <main>
-        <NavBar />
         <ContentSection
           icon={Person}
           title="About Me"
