@@ -4,18 +4,32 @@ import { useEffect, useRef } from "react";
 import Typed from "typed.js";
 
 interface TypeProps {
+  /** The array of strings to be typed sequentially. */
   text: ReadonlyArray<string>;
+
+  /**
+   * The speed at which the text is typed (in milliseconds per character).
+   * Default: 100
+   */
   typeSpeed?: number;
+
+  /**
+   * The prefix to be added before each typed string.
+   * Default: ""
+   */
   prefix?: string;
 }
 
+/**
+ * A component that types out an array of strings with optional prefix.
+ * Uses the Typed.js library for the typing animation.
+ */
 export default function Type({
   text,
   typeSpeed = 100,
   prefix = "",
 }: TypeProps) {
-  // Create reference to store the DOM element containing the animation
-  const ref = useRef(null);
+  const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const strings = text.map((t) => `${prefix}<span>${t}</span>`);
