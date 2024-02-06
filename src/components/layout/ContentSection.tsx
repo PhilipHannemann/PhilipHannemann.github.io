@@ -1,22 +1,34 @@
 import { ReactNode } from "react";
 import SectionHeadline from "./SectionHeadline";
 import { Github, type Icon } from "react-bootstrap-icons";
-import Video from "./Video";
+import Video from "../Video";
 
 interface ContentSectionProps {
+  /** The title of the section. */
   title: ReactNode;
+  /** The optional icon to display left the headline. */
   icon?: Icon;
+  /** The content of the section. */
   children: ReactNode;
+  /** The source URL for optional media (mp4 or any supported image format). */
   mediaSrc?: string;
+  /** The variation of the section (white or light blue background). */
   variant?: 1 | 2;
+  /** If the media should take 2/3s of the section. */
   mediaLarge?: boolean;
+  /** If the media should be on the right side. */
   flip?: boolean;
+  /** The subtitle below the media. */
   mediaSubtitle?: string;
+  /** An optional git repository URL. */
   repository?: string;
 }
 
 type ImgProps = Parameters<typeof Video>[0];
 
+/**
+ * Renders a section with media next to descriptive dext.
+ */
 export default function ContentSection({
   title,
   icon,
