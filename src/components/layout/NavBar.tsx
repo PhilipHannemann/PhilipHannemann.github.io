@@ -5,11 +5,20 @@ import { usePathname } from "next/navigation";
 import { Github } from "react-bootstrap-icons";
 
 interface NavLinkProps {
+  /** The content of the navigation link. */
   children: ReactNode;
+
+  /** The URL to navigate to. */
   href: string;
+
+  /** Additional css classes for the navigation link.*/
   className?: string;
 }
 
+/**
+ * Renders a navigation link for the navigation bar.
+ * The link is styled with an underline if the current path matches the href.
+ */
 function NavLink({ children, href, className = "" }: NavLinkProps) {
   const path = usePathname();
   const color = path === href ? "active" : "";
@@ -23,6 +32,7 @@ function NavLink({ children, href, className = "" }: NavLinkProps) {
   );
 }
 
+/** Renders the navigation bar. */
 export default function NavBar() {
   const id = "navBar";
 
