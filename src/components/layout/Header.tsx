@@ -21,8 +21,9 @@ interface HeaderProps {
  */
 export default function Header({ title, slideShow, typed }: HeaderProps) {
   const path = usePathname();
+  const imgPath = path === "/" ? "/about" : path;
 
-  const imgSrc = path + ".JPG";
+  const imgSrc = imgPath + ".JPG";
 
   const subHeadline = typed && (
     <h4>
