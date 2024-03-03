@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { Github } from "react-bootstrap-icons";
+import { GITHUB_PAGES_URL } from "@/constants/contact";
 
 interface NavLinkProps {
   /** The content of the navigation link. */
@@ -58,7 +59,10 @@ export default function NavBar() {
               <NavLink href="/resume">Resume</NavLink>
               <NavLink href="/contact">Contact</NavLink>
 
-              <NavLink href="#" className="end-0 position-absolute px-2">
+              <NavLink
+                href={GITHUB_PAGES_URL}
+                className="end-0 position-absolute px-2"
+              >
                 <Github />
               </NavLink>
             </ul>

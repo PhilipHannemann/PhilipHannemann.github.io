@@ -15,7 +15,7 @@ export default function ProgressBar({ percentage, title }: ProgressBarProps) {
       <span>{title}</span>
       <div className="progress my-2" style={{ height: "20px" }}>
         <div
-          className="progress-bar bg-light-orange text-dark-blue"
+          className="progress-bar bg-secondary text-dark"
           role="progressbar"
           style={{ width: percentage + "%" }}
           aria-valuenow={percentage}

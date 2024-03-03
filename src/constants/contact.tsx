@@ -21,3 +21,6 @@ export const CONTACT_DATA: ListElement[] = [
   ],
   [Phone, "Phone:", "+49 176 8505 1499"],
 ] as const;
+
+export const GITHUB_PAGES_URL =
+  "https://github.com/PhilipHannemann/PhilipHannemann.github.io";

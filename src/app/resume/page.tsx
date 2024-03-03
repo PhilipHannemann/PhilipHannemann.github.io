@@ -16,7 +16,7 @@ export default function ResumePage() {
       <NavBar />
 
       <main>
-        <section id="resume" className="resume bg-white">
+        <section className="resume bg-white min-vh-100">
           <div className="container">
             <SectionHeadline icon={Clipboard2DataFill}>Resume</SectionHeadline>
             <div className="section-title">

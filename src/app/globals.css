@@ -9,18 +9,6 @@
   --color-blue: #123361;
 }
 
-.text-dark-blue {
-  color: var(--color-dark-blue) !important;
-}
-
-.bg-light-orange {
-  background-color: var(--theme-color) !important;
-}
-
-.bg-blue {
-  background: var(--color-blue);
-}
-
 .bg-milk {
   backdrop-filter: saturate(180%) blur(20px);
   background-color: rgba(255, 255, 255, 0.72);
@@ -41,10 +29,6 @@
   width: 60px;
 }
 
-section {
-  min-height: 100vh;
-}
-
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -61,7 +45,6 @@ a {
 
 .link:hover {
   color: var(--theme-color) !important;
-  text-decoration: none;
 }
 
 @media (min-width: 576px) {

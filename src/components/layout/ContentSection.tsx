@@ -92,7 +92,9 @@ export default function ContentSection({
   const background = variant == 1 ? "bg-white" : "bg-light";
 
   return (
-    <section className={`about shadow d-flex flex-column ${background}`}>
+    <section
+      className={`about shadow d-flex min-vh-100 flex-column ${background}`}
+    >
       <div className="container px-5 d-flex flex-column flex-grow-1">
         <SectionHeadline icon={icon}>{title}</SectionHeadline>
         <div className="d-flex align-items-center flex-grow-1">{grid}</div>

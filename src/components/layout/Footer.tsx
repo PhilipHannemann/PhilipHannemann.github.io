@@ -1,3 +1,4 @@
+import { GITHUB_PAGES_URL } from "@/constants/contact";
 import { Github } from "react-bootstrap-icons";
 
 interface FooterProps {
@@ -22,10 +23,7 @@ export default function Footer({ extented }: FooterProps) {
       <br />
       Curious about the code behind the scenes? Explore the website&apos;s
       source code{" "}
-      <a
-        className="text-action"
-        href="https://github.com/PhilipHannemann/PhilipHannemann.github.io"
-      >
+      <a className="text-action" href={GITHUB_PAGES_URL}>
         here&nbsp;
         <Github />
       </a>{" "}
