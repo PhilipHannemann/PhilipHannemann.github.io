@@ -38,8 +38,8 @@ export default function Header({ title, slideShow, typed }: HeaderProps) {
         alt={`Philip Hannemann - ${title}`}
         delay={10}
       />
-      <div className="blend-container blend-in" />
-      <div className="text-container">
+      <div className="blend-container w-100 h-100 position-absolute bg-dark blend-in" />
+      <div className="text-container text-white">
         <h1 className="display-3 text-shadow">{title}</h1>
         {subHeadline}
       </div>
