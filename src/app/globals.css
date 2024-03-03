@@ -9,20 +9,8 @@
   --color-blue: #123361;
 }
 
-.bg-dark-blue {
-  background: var(--color-dark-blue);
-}
-
 .text-dark-blue {
   color: var(--color-dark-blue) !important;
-}
-
-.text-orange {
-  color: var(--theme-color-dark) !important;
-}
-
-.bg-orange {
-  background-color: var(--theme-color-dark) !important;
 }
 
 .bg-light-orange {
@@ -31,10 +19,6 @@
 
 .bg-blue {
   background: var(--color-blue);
-}
-
-.text-blue {
-  color: var(--color-blue) !important;
 }
 
 .bg-milk {

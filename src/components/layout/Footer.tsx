@@ -23,7 +23,7 @@ export default function Footer({ extented }: FooterProps) {
       Curious about the code behind the scenes? Explore the website&apos;s
       source code{" "}
       <a
-        className="text-orange"
+        className="text-action"
         href="https://github.com/PhilipHannemann/PhilipHannemann.github.io"
       >
         here&nbsp;
@@ -44,8 +44,8 @@ export default function Footer({ extented }: FooterProps) {
           <span className="text-start">
             {headline}
             <p>
-              Designed by <span className="text-orange">Philip Hannemann</span>{" "}
-              and made with <span className="text-orange">Next.js</span>
+              Designed by <span className="text-action">Philip Hannemann</span>{" "}
+              and made with <span className="text-action">Next.js</span>
             </p>
             {description}
           </span>
