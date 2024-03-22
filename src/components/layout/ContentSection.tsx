@@ -5,9 +5,9 @@ import Video from "../Video";
 
 interface ContentSectionProps {
   /** The title of the section. */
-  title: ReactNode;
+  title: string;
   /** The optional icon to display left the headline. */
-  icon?: Icon;
+  Icon?: Icon;
   /** The content of the section. */
   children: ReactNode;
   /** The source URL for optional media (mp4 or any supported image format). */
@@ -31,7 +31,7 @@ type ImgProps = Parameters<typeof Video>[0];
  */
 export default function ContentSection({
   title,
-  icon,
+  Icon,
   children,
   mediaSrc,
   variant = 1,
@@ -47,10 +47,7 @@ export default function ContentSection({
 
   const mediaSize = mediaLarge ? "col-lg-7" : "col-lg-4";
   const media = mediaSrc && (
-    <div
-      className={`${mediaSize} d-flex align-items-center`}
-      data-aos="fade-right"
-    >
+    <div className={`${mediaSize} d-flex align-items-center`}>
       <div className="position-relative">
         <Media src={mediaSrc} className="img-fluid rounded my-3" />
         <p className="text-center w-100">
@@ -73,7 +70,6 @@ export default function ContentSection({
   const content = (
     <div
       className={`${contentSize} pt-4 d-flex align-items-center pt-lg-0 content`}
-      data-aos="fade-left"
     >
       <div>{children}</div>
     </div>
@@ -90,13 +86,17 @@ export default function ContentSection({
   );
 
   const background = variant == 1 ? "bg-white" : "bg-light";
+  const id = title.toLowerCase().replace(/\s/g, "-");
 
   return (
     <section
       className={`about shadow d-flex min-vh-100 flex-column ${background}`}
+      id={id}
     >
       <div className="container px-5 d-flex flex-column flex-grow-1">
-        <SectionHeadline icon={icon}>{title}</SectionHeadline>
+        <SectionHeadline Icon={Icon} linkId={id}>
+          {title}
+        </SectionHeadline>
         <div className="d-flex align-items-center flex-grow-1">{grid}</div>
       </div>
     </section>
