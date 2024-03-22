@@ -9,11 +9,6 @@
   --color-blue: #123361;
 }
 
-.bg-milk {
-  backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(255, 255, 255, 0.72);
-}
-
 .bg-blue-milk {
   background: rgb(255, 255, 255, 0.7);
 }
@@ -185,17 +180,6 @@ section {
   padding: 60px 0;
 }
 
-.section-bg {
-  background: #f5f8fd;
-}
-
-.section-title hr {
-  color: var(--theme-color-dark);
-  border-top-width: 2px;
-  opacity: 1;
-  border-radius: 4px;
-}
-
 .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -235,16 +219,6 @@ section {
   top: 0;
   background: white;
   border: 2px solid #fa8500;
-}
-
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .grid-container-2 {

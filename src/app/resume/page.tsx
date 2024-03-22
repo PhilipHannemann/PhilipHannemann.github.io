@@ -19,13 +19,11 @@ export default function ResumePage() {
         <section className="resume bg-white min-vh-100">
           <div className="container">
             <SectionHeadline icon={Clipboard2DataFill}>Resume</SectionHeadline>
-            <div className="section-title">
-              <p>
-                During my career as a computer scientist, I have been involved
-                in many innovative automated systems that redefine convenience,
-                efficiency, and sustainability.
-              </p>
-            </div>
+            <p>
+              During my career as a computer scientist, I have been involved in
+              many innovative automated systems that redefine convenience,
+              efficiency, and sustainability.
+            </p>
 
             <Resume carrier={CARRIER} education={EDUCATION} />
           </div>
