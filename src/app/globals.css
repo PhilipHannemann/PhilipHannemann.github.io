@@ -120,6 +120,10 @@ h6 {
   }
 }
 
+.transiotion-opacity-05 {
+  transition: opacity 0.5s;
+}
+
 .slide {
   opacity: 0;
   transition: opacity 2s;
