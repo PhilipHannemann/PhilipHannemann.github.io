@@ -1,21 +1,10 @@
 import NextLink from "next/link";
-import { ReactNode } from "react";
 
-interface LinkProps {
-  /** The URL to navigate to. */
-  href: string;
-
-  /** The content of the link. */
-  children: ReactNode;
-}
+type LinkProps = Parameters<typeof NextLink>[0];
 
 /**
  * Renders a link with an orange color on hover.
  */
-export default function Link({ href, children }: LinkProps) {
-  return (
-    <NextLink href={href} className="link text-break">
-      {children}
-    </NextLink>
-  );
+export default function Link({ className = "", ...props }: LinkProps) {
+  return <NextLink className={`link text-break ${className}`} {...props} />;
 }
