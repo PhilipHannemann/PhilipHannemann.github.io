@@ -1,3 +1,4 @@
+"use client";
 import Footer from "@/components/layout/Footer";
 import NavBar from "@/components/layout/NavBar";
 import { Git, Linkedin } from "react-bootstrap-icons";
@@ -15,7 +16,7 @@ export default function Projects() {
 
       <main>
         <ContentSection
-          icon={Git}
+          Icon={Git}
           title="Projects"
           mediaSrc="/future.jpeg"
           flip
@@ -160,7 +161,7 @@ export default function Projects() {
           </p>
         </ContentSection>
         <ContentSection
-          title="Be[e]Alive"
+          title="Be[e] Alive"
           flip
           mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1705700789/projects/v4zitmfwmnw6f8wxkj1x.mp4"
           mediaSubtitle="SwiftUI App recorded on an iPhone."
@@ -202,7 +203,7 @@ export default function Projects() {
         </ContentSection>
         <ContentSection
           title="LinkedIn Assessment"
-          icon={Linkedin}
+          Icon={Linkedin}
           mediaLarge
           variant={2}
           mediaSrc="https://res.cloudinary.com/ddecognjv/video/upload/v1705705811/projects/trjkmhb9orwfppierm6g.mp4"

@@ -1,3 +1,4 @@
+"use client";
 import ContentSection from "@/components/layout/ContentSection";
 import DataList from "@/components/DataList";
 import Footer from "@/components/layout/Footer";
@@ -17,7 +18,7 @@ export default function Contact() {
 
       <main>
         <ContentSection
-          icon={Envelope}
+          Icon={Envelope}
           title="Contact"
           mediaSrc="/philip_klein.JPG"
         >

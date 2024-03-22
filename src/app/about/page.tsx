@@ -1,3 +1,4 @@
+"use client";
 import ContentSection from "@/components/layout/ContentSection";
 import DataList from "@/components/DataList";
 import Footer from "@/components/layout/Footer";
@@ -27,7 +28,7 @@ export default function About() {
 
       <main>
         <ContentSection
-          icon={Person}
+          Icon={Person}
           title="About Me"
           mediaSrc="/philip_klein.JPG"
         >
@@ -53,7 +54,7 @@ export default function About() {
           <DataList data={ABOUT_DATA} />
         </ContentSection>
 
-        <ContentSection icon={PatchCheck} title="Skills" variant={2}>
+        <ContentSection Icon={PatchCheck} title="Skills" variant={2}>
           {skills}
         </ContentSection>
       </main>
