@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 /**
  * Represents a single entry in the resume.
  */
@@ -41,7 +43,7 @@ export default function Resume({ education, carrier }: ResumeProps) {
   const carrierView = carrier.map(resumeEntryToItem);
 
   return (
-    <div className="row">
+    <div className="row resume">
       <div className="col-lg-6">
         <h3 className="text-dark py-4">Education</h3>
         {educationView}
@@ -75,16 +77,22 @@ function ResumeItem({
     </ul>
   );
 
+  function HighLight({ children }: { children: ReactNode }) {
+    return (
+      <h5 className="me-2 rounded bg-secondary bg-opacity-25 text-dark">
+        {children}
+      </h5>
+    );
+  }
+
   return (
     <div className="resume-item">
       <h4 className="fw-bolder text-dark text-uppercase h5">{headline}</h4>
       <div className="pb-2">
         <i>{subheadline}</i>
       </div>
-      <h5 className="rounded bg-secondary bg-opacity-25 text-dark">{time}</h5>
-      <h5 className="mx-2 rounded bg-secondary bg-opacity-25 text-dark">
-        @{at}
-      </h5>
+      <HighLight>{time}</HighLight>
+      <HighLight>@{at}</HighLight>
       <p>{description}</p>
       {workingOnList}
     </div>
