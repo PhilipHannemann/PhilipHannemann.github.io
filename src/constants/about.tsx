@@ -48,14 +48,12 @@ export const SKILLS = [
     left: [
       ["React", 100],
       ["Next.js", 100],
-      ["Pandas", 95],
-      ["Flask", 100],
+      ["React Native", 80],
     ],
     right: [
       ["SwiftUI", 95],
+      ["UIKit", 90],
       ["Spring Boot", 95],
-      ["ROS", 80],
-      ["Boost", 90],
     ],
   },
   {
@@ -63,10 +61,12 @@ export const SKILLS = [
     left: [
       ["CI / CD (GitLab CI & GitHub Actions)", 95],
       ["Git", 100],
+      ["XCode", 100],
     ],
     right: [
       ["Docker", 100],
       ["Kafka", 100],
+      ["VSCode", 100],
     ],
   },
 ] as const satisfies ReadonlyArray<SkillSet>;
