@@ -100,18 +100,17 @@ export default function Projects() {
           <p>
             This comprehensive app showcases my coding proficiency through
             various details, including:
-            <ul className="py-2">
-              <li>Creating an aesthetically interface using UIKit and Swift</li>
-              <li>
-                Implementing unique card designs with custom shapes created
-                using bezier paths
-              </li>
-              <li>
-                Developing robust game logic with automatic set detection in
-                Swift
-              </li>
-            </ul>
           </p>
+          <ul className="py-2">
+            <li>Creating an aesthetically interface using UIKit and Swift</li>
+            <li>
+              Implementing unique card designs with custom shapes created using
+              bezier paths
+            </li>
+            <li>
+              Developing robust game logic with automatic set detection in Swift
+            </li>
+          </ul>
           <p>
             The app offers three distinct play modes: single-player,
             multiplayer, and the option to challenge an AI opponent. Notably, it
@@ -174,27 +173,27 @@ export default function Projects() {
             designed to assist cities and avid gardeners in selecting the
             optimal assortment of flowers throughout the year.
           </p>
-          <p>
-            <b>Key Features:</b>
-            <ul className="py-2">
-              <li>
-                <b>Intelligent Plant Selection</b>: The app uses SwiftUI for an
-                intuitive interface that simplifies the process of choosing the
-                right mix of flowers, fostering a continuous bloom.
-              </li>
-              <li>
-                <b>Connected to a Netcup-Hosted API</b>: Leveraging a
-                self-created API, the app seamlessly integrates with a growing
-                flower database. Although the database is a work in progress,
-                the app is on the edge of being released to the App Store.
-              </li>
-              <li>
-                <b>Functionalities</b>: The app boasts a robust set of features,
-                including a plant search, a calendar for optimal planting times,
-                and an overview page for quick reference.
-              </li>
-            </ul>
-          </p>
+
+          <h6>Key Features:</h6>
+          <ul className="py-2">
+            <li>
+              <b>Intelligent Plant Selection</b>: The app uses SwiftUI for an
+              intuitive interface that simplifies the process of choosing the
+              right mix of flowers, fostering a continuous bloom.
+            </li>
+            <li>
+              <b>Connected to a Netcup-Hosted API</b>: Leveraging a self-created
+              API, the app seamlessly integrates with a growing flower database.
+              Although the database is a work in progress, the app is on the
+              edge of being released to the App Store.
+            </li>
+            <li>
+              <b>Functionalities</b>: The app boasts a robust set of features,
+              including a plant search, a calendar for optimal planting times,
+              and an overview page for quick reference.
+            </li>
+          </ul>
+
           <p>
             While the database is currently in development, the vision is to
             populate it comprehensively with a diverse array of flowers,
@@ -215,25 +214,24 @@ export default function Projects() {
             converts GitHub-crawled markdown files into JSON data, creating a
             dynamic question pool.
           </p>
-          <p>
-            <b>Key Features:</b>
-            <ul className="py-2">
-              <li>
-                <b>MongoDB Integration</b>: Seamlessly connected to MongoDB,
-                storing user progress and results for a personalized learning
-                experience.
-              </li>
-              <li>
-                <b>Adaptive Questioning</b>: Utilizes a smart algorithm to
-                present new questions, revisit incorrect answers, and strengthen
-                understanding by revisiting correctly answered questions.
-              </li>
-              <li>
-                <b>LinkedIn-inspired Interface</b>: Recreates the engaging skill
-                assessment experience, for continuous skill development.
-              </li>
-            </ul>
-          </p>
+
+          <h6>Key Features:</h6>
+          <ul className="py-2">
+            <li>
+              <b>MongoDB Integration</b>: Seamlessly connected to MongoDB,
+              storing user progress and results for a personalized learning
+              experience.
+            </li>
+            <li>
+              <b>Adaptive Questioning</b>: Utilizes a smart algorithm to present
+              new questions, revisit incorrect answers, and strengthen
+              understanding by revisiting correctly answered questions.
+            </li>
+            <li>
+              <b>LinkedIn-inspired Interface</b>: Recreates the engaging skill
+              assessment experience, for continuous skill development.
+            </li>
+          </ul>
         </ContentSection>
       </main>
 
