@@ -3,7 +3,6 @@ import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import NavBar from "@/components/layout/NavBar";
 import Resume from "@/components/Resume";
-import SectionHeadline from "@/components/layout/SectionHeadline";
 import { CARRIER, EDUCATION, HEADER_SLIDES, I_AM } from "@/constants/resume";
 import { Clipboard2DataFill } from "react-bootstrap-icons";
 import ContentSection from "@/components/layout/ContentSection";
