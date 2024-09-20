@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Link from "./Link";
 
 /**
  * Represents a single entry in the resume.
@@ -16,6 +17,8 @@ export interface ResumeEntry {
   description?: string;
   /** The projects or tasks worked on. */
   workingOn: string[];
+  /** additional reference link */
+  link?: { title: string; href: string };
 }
 
 /**
@@ -66,6 +69,7 @@ function ResumeItem({
   subheadline,
   at,
   description,
+  link,
 }: ResumeEntry) {
   const workingOnList = (
     <ul className="m-0">
@@ -93,6 +97,11 @@ function ResumeItem({
       </div>
       <HighLight>{time}</HighLight>
       <HighLight>@{at}</HighLight>
+      {link && (
+        <HighLight>
+          <Link href={link.href}>{link.title}</Link>
+        </HighLight>
+      )}
       <p>{description}</p>
       {workingOnList}
     </div>
