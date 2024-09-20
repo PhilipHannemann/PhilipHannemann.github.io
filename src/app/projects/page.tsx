@@ -4,6 +4,7 @@ import NavBar from "@/components/layout/NavBar";
 import { Git, Linkedin } from "react-bootstrap-icons";
 import ContentSection from "@/components/layout/ContentSection";
 import Header from "@/components/layout/Header";
+import Link from "@/components/Link";
 
 /**
  * Renders the Projects page.
@@ -157,6 +158,13 @@ export default function Projects() {
             real-time algorithm to optimize driving strategies based on the
             timetable and track constraints, thereby contributing to the broader
             initiative of sustainable and efficient transportation systems.
+          </p>
+          <p>
+            The work resulted in the following patent{" "}
+            <Link href="https://patentimages.storage.googleapis.com/08/f9/80/ecf6caec3643da/DE102020212167A1.pdf">
+              <b>Method for determining an energy-saving driving style</b>
+            </Link>
+            .
           </p>
         </ContentSection>
         <ContentSection
