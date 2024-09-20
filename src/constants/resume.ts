@@ -3,7 +3,7 @@ import { type ResumeEntry } from "@/components/Resume";
 /** titles for getting typed on the about and resume page */
 export const I_AM = [
   "a Senior Developer",
-  "a Data Scientist",
+  "an App Developer",
   "a Full-Stack Developer",
   "Head of Process Automation",
 ] as const;
@@ -17,6 +17,18 @@ export const HEADER_SLIDES = [
 
 /** resume entries for the educational history */
 export const EDUCATION: ReadonlyArray<ResumeEntry> = [
+  {
+    headline: "Promotion",
+    subheadline:
+      "Real-time path planning and coordination in dynamic multi-agent systems",
+    time: "since 2023",
+    at: "TU Munich",
+    workingOn: [
+      "Optimal solution of multiagents in dynamic graph structures",
+      "Real-time coordination in dynamic multi-agent systems",
+      "Development of a training-based behavior model for dynamic graph layouts",
+    ],
+  },
   {
     headline: "Master of Applied Computer Science",
     subheadline:
@@ -72,6 +84,10 @@ export const CARRIER: ReadonlyArray<ResumeEntry> = [
     subheadline: "Master Thesis",
     time: "2019 - 2020",
     at: "Siemens Mobility",
+    link: {
+      title: "Patent",
+      href: "https://patentimages.storage.googleapis.com/08/f9/80/ecf6caec3643da/DE102020212167A1.pdf",
+    },
     description:
       "During my master thesis, I architected real-time optimization algorithms in C++ to make trains more energy-efficient. I focused on crafting algorithms aimed at energy efficiency by calculating the optimal driving strategies in real-time - an solution that holds immense promise for sustainable transportation solutions.",
     workingOn: [],
