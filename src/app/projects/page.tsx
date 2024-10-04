@@ -23,19 +23,11 @@ export default function Projects() {
           flip
           mediaSubtitle="DALL-E 3 generated image based on my career"
         >
-          <h3>Head of Process Automation &amp; Developer</h3>
+          <h3>Head of Process Automation &amp; App Developer</h3>
           <p>
             During my career as a computer scientist, I have been involved in
             many innovative automated systems that redefine convenience,
             efficiency, and sustainability.
-          </p>
-          <p>
-            All began with an internship at the IAV, where I contributed to the
-            creation of a groundbreaking system — the Concierge Service. This
-            pioneering initiative empowered vehicles to autonomously perform
-            multiple tasks at parking spaces. It enabled cars to handle
-            activities such as car maintenance, finding parking spaces, and even
-            executing repairs fully autonomously.
           </p>
           <p>
             During my master thesis, I architected real-time optimization
@@ -45,8 +37,7 @@ export default function Projects() {
             immense promise for sustainable transportation solutions.
           </p>
           <p>
-            As a software engenier I started a job at STTech what further fueled
-            my passion for automated systems as I had the chance in developing
+            As a software engenier I started a job at STTech for developing
             autonomous cleaning robots build for the demands of expansive spaces
             like supermarkets and warehouses and working on autonomous car
             driving solutions.
@@ -57,6 +48,14 @@ export default function Projects() {
             processes for insurance companies, particularly within the domain of
             dentist invoices. This domain allowed me to leverage automation to
             enhance efficiency, accuracy, and customer satisfaction.
+          </p>
+          <p>
+            During my career, I have always had a passion for app development,
+            creating innovative and user-friendly tools. This includes a claim
+            handling app, an AI-powered video editing app, and a whiteboard app
+            that automates various workflows. At STTech, my strengths in app
+            development and algorithm design come together seamlessly, allowing
+            me to contribute to cutting-edge solutions.
           </p>
         </ContentSection>
         <ContentSection
